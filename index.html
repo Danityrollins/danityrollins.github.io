@@ -1,0 +1,225 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fajuyi Daniel · AI Automation &amp; Operations</title>
+<meta name="description" content="Fajuyi Daniel builds AI agents, Make.com, n8n and Zapier automations, and operations systems for businesses.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+@page { size: A4; margin: 0; }
+:root{ --ink:#0f172a; --mut:#5b6474; --line:#e6e8ee; --acc:#4f46e5; --acc2:#0ea5a4; --soft:#f4f5fb; --dark:#0b1020; }
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Inter",sans-serif;color:var(--ink);font-size:10.5pt;line-height:1.5}
+.page{width:210mm;height:297mm;padding:18mm 17mm 16mm;position:relative;page-break-after:always;overflow:hidden}
+.page:last-child{page-break-after:auto}
+h1,h2,h3{font-family:"Poppins",sans-serif;line-height:1.15}
+.foot{position:absolute;bottom:9mm;left:17mm;right:17mm;display:flex;justify-content:space-between;font-size:8pt;color:#9aa1ad;border-top:1px solid var(--line);padding-top:3mm}
+.eyebrow{font-size:8.5pt;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);font-weight:600}
+/* cover */
+.cover{background:var(--dark);color:#fff;padding:0}
+.cover .glow{position:absolute;width:150mm;height:150mm;border-radius:50%;filter:blur(60px);opacity:.55}
+.cover .in{position:relative;padding:26mm 20mm;height:100%;display:flex;flex-direction:column}
+.cover h1{font-size:40pt;font-weight:700;margin:6mm 0 4mm}
+.cover .role{font-size:15pt;color:#c7cbf5;font-weight:500}
+.cover .lead{margin-top:10mm;font-size:12pt;color:#d6d9e6;max-width:150mm;line-height:1.6}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:4mm;margin-top:auto}
+.stat{border:1px solid rgba(255,255,255,.15);border-radius:4mm;padding:5mm 4mm;background:rgba(255,255,255,.04)}
+.stat b{display:block;font-family:Poppins;font-size:19pt}
+.stat span{font-size:8.5pt;color:#aeb4c8}
+.tools{display:flex;flex-wrap:wrap;gap:2mm;margin-top:8mm}
+.tools span{font-size:8.5pt;border:1px solid rgba(255,255,255,.2);border-radius:20mm;padding:1.2mm 3.5mm;color:#e3e6f3}
+/* content */
+.h{font-size:22pt;margin:3mm 0 2mm}
+.sub{color:var(--mut);font-size:11pt;margin-bottom:7mm;max-width:160mm}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.card{border:1px solid var(--line);border-radius:4mm;padding:5mm;background:#fff}
+.card h3{font-size:11.5pt;margin-bottom:1.5mm}
+.card p{color:var(--mut);font-size:9.5pt}
+.num{display:inline-flex;width:8mm;height:8mm;border-radius:2mm;background:var(--soft);color:var(--acc);font-weight:700;align-items:center;justify-content:center;font-size:9pt;margin-bottom:3mm}
+.case-top{display:flex;justify-content:space-between;align-items:flex-start;gap:6mm}
+.tag{display:inline-block;font-size:8pt;background:var(--soft);color:var(--acc);border-radius:20mm;padding:1mm 3mm;margin:0 1.5mm 1.5mm 0;font-weight:600}
+.flow{display:flex;align-items:stretch;gap:0;margin:6mm 0;background:var(--soft);border-radius:4mm;padding:5mm 4mm}
+.node{flex:1;background:#fff;border:1px solid var(--line);border-radius:3mm;padding:3mm 2.5mm;text-align:center}
+.node b{display:block;font-size:8.8pt}
+.node small{font-size:7.6pt;color:var(--mut);line-height:1.3;display:block;margin-top:.8mm}
+.node.ai{border-color:#c7c4fb;background:#f3f2ff}
+.node.ok{border-color:#a7e3dc;background:#effbf9}
+.arr{width:6mm;display:flex;align-items:center;justify-content:center;color:#9aa1ad;font-size:12pt}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:7mm}
+.cols h4{font-family:Poppins;font-size:10pt;margin-bottom:2mm}
+ul{padding-left:4.5mm}
+li{margin-bottom:1.4mm;font-size:9.6pt}
+li::marker{color:var(--acc)}
+.results{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin-top:6mm}
+.res{border-left:3px solid var(--acc2);padding:1mm 0 1mm 3.5mm}
+.res b{font-family:Poppins;font-size:15pt;display:block}
+.res span{font-size:8.6pt;color:var(--mut)}
+.divider{height:1px;background:var(--line);margin:8mm 0}
+.mini{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+.mini .card{padding:4.5mm}
+.contact{background:var(--dark);color:#fff}
+.contact .in{padding:26mm 20mm;height:100%;display:flex;flex-direction:column}
+.link{display:flex;justify-content:space-between;align-items:center;border:1px solid rgba(255,255,255,.15);border-radius:4mm;padding:5mm 6mm;margin-bottom:4mm;color:#fff;text-decoration:none;background:rgba(255,255,255,.04)}
+.link b{font-family:Poppins;font-size:12pt}
+.link span{color:#aeb4c8;font-size:9.5pt}
+</style><style>
+@media screen{
+ body{background:#fff}
+ .page{width:auto;height:auto;max-width:1000px;margin:0 auto;padding:72px 24px;overflow:visible}
+ .cover,.contact{max-width:none;padding:0;overflow:hidden}
+ .cover .in,.contact .in{max-width:1000px;margin:0 auto;padding:90px 24px 70px;height:auto;min-height:90vh}
+ .contact .in{min-height:auto}
+ .stats{margin-top:56px}
+ .foot{display:none}
+ .page + .page:not(.contact){border-top:1px solid var(--line)}
+ .nav{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.85);backdrop-filter:blur(8px);color:#fff}
+ .nav .w{max-width:1000px;margin:0 auto;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;font-size:14px}
+ .nav a{color:#c7cbf5;text-decoration:none;margin-left:18px}
+ .btn{display:inline-block;background:#4f46e5;color:#fff!important;padding:11px 20px;border-radius:999px;text-decoration:none;font-weight:600;margin-top:28px;margin-right:10px}
+ .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.3)}
+}
+@media screen and (max-width:760px){
+ .grid2,.cols,.mini,.results,.stats{grid-template-columns:1fr!important}
+ .flow{flex-direction:column}
+ .arr{width:auto;height:22px;transform:rotate(90deg)}
+ .cover h1{font-size:34pt}
+ .nav .links a:not(:last-child){display:none}
+ .link{flex-direction:column;align-items:flex-start;gap:4px}
+}
+</style></head><body>
+<div class="nav"><div class="w"><b style="font-family:Poppins">Fajuyi Daniel</b><span class="links"><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a></span></div></div>
+
+<!-- COVER -->
+<section class="page cover">
+  <div class="glow" style="background:#4f46e5;top:-40mm;right:-50mm"></div>
+  <div class="glow" style="background:#0ea5a4;bottom:-70mm;left:-60mm;opacity:.35"></div>
+  <div class="in">
+    <div class="eyebrow" style="color:#a5b4fc">Portfolio · 2026</div>
+    <h1>Fajuyi Daniel</h1>
+    <div class="role">AI Automation Engineer &amp; Operations / Project Manager</div>
+    <p class="lead">I design AI agents and automated workflows that take repetitive work off a team's plate: capturing leads, qualifying them with AI, running outreach and follow-ups, and keeping projects moving without manual chasing. Industrial &amp; Production Engineering graduate (FUTA), so I think in systems, flow and efficiency.</p>
+    <div><a class="btn" href="https://www.upwork.com/freelancers/~01708bffbb8b6d5771">Hire me on Upwork</a><a class="btn ghost" href="Fajuyi_Daniel_Portfolio.pdf">Download PDF portfolio</a></div>
+    <div class="tools">
+      <span>Make.com</span><span>n8n</span><span>Zapier</span><span>OpenAI / LLM agents</span><span>Claude AI</span><span>Apollo</span><span>Instantly</span><span>GoHighLevel</span><span>Trello &amp; Butler</span><span>Notion</span><span>Monday.com</span><span>REST APIs &amp; Webhooks</span><span>Google Sheets</span>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>4 yrs</b><span>Automation &amp; ops experience</span></div>
+      <div class="stat"><b>US &amp; UAE</b><span>Client markets served</span></div>
+      <div class="stat"><b>Live</b><span>Agents running daily in production</span></div>
+      <div class="stat"><b>IBM</b><span>Project Manager certified</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="page" id="services">
+  <div class="eyebrow">What I do</div>
+  <h2 class="h">Systems that run while you sleep</h2>
+  <p class="sub">Most of my work sits where AI meets business operations: using language models to read, decide and write inside a real workflow, then wiring the result into the tools a team already uses.</p>
+  <div class="grid2">
+    <div class="card"><div class="num">01</div><h3>AI agents &amp; LLM workflows</h3><p>Agents that parse unstructured inputs (emails, forms, documents), score and classify leads, return structured JSON and draft personalised messages. Prompt design, output validation and human-in-the-loop approval steps.</p></div>
+    <div class="card"><div class="num">02</div><h3>Lead generation &amp; AI SDR outreach</h3><p>Sourcing and enrichment (Apollo, public APIs), email verification, deduplication, multi-touch sequences, reply listeners and booking tracking, end to end.</p></div>
+    <div class="card"><div class="num">03</div><h3>Workflow automation &amp; integrations</h3><p>Make.com, n8n and Zapier builds connecting CRMs, inboxes, sheets and project tools through webhooks and REST APIs. Also fixing and restructuring broken automations.</p></div>
+    <div class="card"><div class="num">04</div><h3>Operations &amp; project management</h3><p>Pipelines and trackers in Trello, Monday.com, Notion and GoHighLevel; weekly reporting; coordinating teams so the founder can focus on sales.</p></div>
+  </div>
+  <div class="divider"></div>
+  <div class="eyebrow">How I work</div>
+  <div class="results" style="grid-template-columns:repeat(4,1fr)">
+    <div class="res"><b>Map</b><span>Understand the current process and where time is lost</span></div>
+    <div class="res"><b>Build</b><span>Inside the client's own accounts, documented as I go</span></div>
+    <div class="res"><b>Test</b><span>Every step run on real data before go-live</span></div>
+    <div class="res"><b>Hand over</b><span>Video walkthrough plus ongoing support if needed</span></div>
+  </div>
+  <div class="foot"><span>Fajuyi Daniel · Portfolio</span><span>02</span></div>
+</section>
+
+<!-- CASE 1 -->
+<section class="page" id="work">
+  <div class="eyebrow">Case study 01 · Legal &amp; expert-witness network (USA)</div>
+  <h2 class="h">AI SDR agents that find, verify and contact leads every day</h2>
+  <div><span class="tag">Make.com</span><span class="tag">OpenAI</span><span class="tag">Apollo</span><span class="tag">ZeroBounce</span><span class="tag">Instantly</span><span class="tag">Microsoft 365</span><span class="tag">Google Sheets</span></div>
+  <div class="flow">
+    <div class="node"><b>Webhook / daily digest</b><small>New leads &amp; inactive profiles arrive</small></div><div class="arr">→</div>
+    <div class="node ai"><b>GPT extraction</b><small>Parses each email into a JSON array of profiles</small></div><div class="arr">→</div>
+    <div class="node"><b>Apollo + ZeroBounce</b><small>Enrich contacts, verify emails</small></div><div class="arr">→</div>
+    <div class="node"><b>Router</b><small>Routes by source &amp; audience</small></div><div class="arr">→</div>
+    <div class="node ok"><b>Outreach + follow-up</b><small>3 touches, 2 days apart, stops on reply</small></div>
+  </div>
+  <div class="cols">
+    <div><h4>The problem</h4><ul>
+      <li>Agents built earlier were only emailing one match per lead and re-sending to the same people, causing bounces and spam flags.</li>
+      <li>The client wanted a proper SDR sequence, not accidental duplicate sends.</li></ul></div>
+    <div><h4>What I built</h4><ul>
+      <li>Rebuilt the agents with array extraction + iterators so every profile is processed once.</li>
+      <li>Daily follow-up sweep, reply listeners that log responses back to the lead sheet, and a Calendly booking listener.</li>
+      <li>A new Realtor SDR agent sending through pre-warmed Instantly inboxes, plus two recruitment agents cloned from it.</li></ul></div>
+  </div>
+  <div class="results">
+    <div class="res"><b>~65 records</b><span>Processed in one verified test run with no duplicates or bounces</span></div>
+    <div class="res"><b>Daily</b><span>Scheduled runs completing successfully in production</span></div>
+    <div class="res"><b>6 agents</b><span>Intake, verification, outreach, follow-up and listeners now live</span></div>
+  </div>
+  <div class="foot"><span>Client details withheld for confidentiality</span><span>03</span></div>
+</section>
+
+<!-- CASE 2 + 3 -->
+<section class="page">
+  <div class="eyebrow">Case study 02 · Patent brokerage (USA)</div>
+  <h2 class="h" style="font-size:18pt">n8n agent that mines the USPTO and pitches inventors</h2>
+  <div><span class="tag">n8n</span><span class="tag">USPTO API</span><span class="tag">Apollo</span><span class="tag">LLM email writing</span></div>
+  <div class="flow">
+    <div class="node"><b>USPTO API search</b><small>Active, unassigned utility patents in a set filing window</small></div><div class="arr">→</div>
+    <div class="node"><b>Dedupe</b><small>Checks the sheet before adding anyone</small></div><div class="arr">→</div>
+    <div class="node"><b>Apollo lookup</b><small>Inventor email, attorney fallback</small></div><div class="arr">→</div>
+    <div class="node ai"><b>AI outreach</b><small>Personalised email per patent</small></div>
+  </div>
+  <p style="color:var(--mut);font-size:9.6pt">Turns a public patent database into a qualified outreach list automatically, with the filing window (10 or 15 years) configurable by the client. Also built: an n8n lead-delivery webhook that builds an audience via API, filters results and emails them back to the requester.</p>
+
+  <div class="divider" style="margin:7mm 0"></div>
+
+  <div class="eyebrow">Case study 03 · AI lead qualification agent</div>
+  <h2 class="h" style="font-size:18pt">Scores every inbound lead and routes the hot ones to a human</h2>
+  <div><span class="tag">AI Agent</span><span class="tag">Structured JSON output</span><span class="tag">Human-in-the-loop</span><span class="tag">Webhook</span></div>
+  <div class="flow">
+    <div class="node"><b>Lead webhook</b><small>Name, company, budget, message</small></div><div class="arr">→</div>
+    <div class="node ai"><b>Qualification agent</b><small>Score 0–100, Hot / Warm / Cold, budget fit, suggested reply</small></div><div class="arr">→</div>
+    <div class="node"><b>Condition</b><small>Score 70+ = Hot</small></div><div class="arr">→</div>
+    <div class="node ok"><b>Human approval</b><small>Hot leads reviewed before sales replies</small></div>
+  </div>
+  <p style="color:var(--mut);font-size:9.6pt">Warm and cold leads go to a second agent that writes a nurture follow-up instead. A test lead scored <b style="color:var(--ink)">94 / Hot</b> and completed the full run after approval. Originally a Make.com flow, migrated to a new agent platform as a sample for a client.</p>
+  <div class="foot"><span>Fajuyi Daniel · Portfolio</span><span>04</span></div>
+</section>
+
+<!-- OPS -->
+<section class="page">
+  <div class="eyebrow">Operations &amp; project systems</div>
+  <h2 class="h">Keeping real businesses organised</h2>
+  <p class="sub">Alongside AI work, I build the operating systems teams run on day to day.</p>
+  <div class="mini">
+    <div class="card"><h3>Roofing CRM → Trello (Zapier)</h3><p>New Roofr leads become Trello cards automatically; cards move when a proposal is sent and the customer gets an email. Every step tested before go-live.</p><div style="margin-top:3mm"><span class="tag">Zapier</span><span class="tag">Roofr</span><span class="tag">Trello</span><span class="tag">Gmail</span></div></div>
+    <div class="card"><h3>Production tracker (Trello Butler)</h3><p>Multi-stage tracker for a joinery business. Butler rules label, sort and move cards and flag jobs that are close to their due date.</p><div style="margin-top:3mm"><span class="tag">Trello</span><span class="tag">Butler</span></div></div>
+    <div class="card"><h3>Property ops system (Monday.com)</h3><p>Project management for a house-flipping and rental business with properties in San Francisco and Oakland: properties, contractor board, maintenance, purchase lists and twice-weekly reports.</p><div style="margin-top:3mm"><span class="tag">Monday.com</span><span class="tag">Automations</span></div></div>
+    <div class="card"><h3>Agency ops (GoHighLevel)</h3><p>Project manager for a US marketing agency: 8 GHL workflows built, sales pipeline updates, team coordination across ads, content and appointment setting, and weekly reporting.</p><div style="margin-top:3mm"><span class="tag">GoHighLevel</span><span class="tag">Slack</span><span class="tag">Reporting</span></div></div>
+    <div class="card"><h3>Business hub (Notion)</h3><p>A full Notion workspace for a wedding and events planner: clients, events, vendors and tasks in one place, handed over with a video walkthrough.</p><div style="margin-top:3mm"><span class="tag">Notion</span></div></div>
+    <div class="card"><h3>Lead list automation (n8n)</h3><p>Weekly pull of newly registered Florida businesses into a deduplicated Google Sheet, emailed to the client every Monday morning.</p><div style="margin-top:3mm"><span class="tag">n8n</span><span class="tag">Google Sheets</span><span class="tag">Gmail</span></div></div>
+  </div>
+  <div class="foot"><span>Screenshots of each build available on request</span><span>05</span></div>
+</section>
+
+<!-- CONTACT -->
+<section class="page contact" id="contact">
+  <div class="glow" style="position:absolute;width:150mm;height:150mm;border-radius:50%;filter:blur(60px);opacity:.45;background:#4f46e5;bottom:-60mm;right:-50mm"></div>
+  <div class="in" style="position:relative">
+    <div class="eyebrow" style="color:#a5b4fc">Let's work together</div>
+    <h1 style="font-size:30pt;margin:5mm 0 4mm">Have a process that eats your team's time?</h1>
+    <p style="color:#d6d9e6;font-size:12pt;max-width:150mm;margin-bottom:12mm">Tell me how it works today and I'll show you what can be automated, with AI where it genuinely helps.</p>
+    <a class="link" href="https://www.upwork.com/freelancers/~01708bffbb8b6d5771"><b>Upwork</b><span>upwork.com/freelancers/~01708bffbb8b6d5771</span></a>
+    <a class="link" href="https://www.fiverr.com/s/Bb8o4mG"><b>Fiverr</b><span>fiverr.com/s/Bb8o4mG</span></a>
+    <a class="link" href="https://www.linkedin.com/in/ayobami-fajuyi-a46043234"><b>LinkedIn</b><span>linkedin.com/in/ayobami-fajuyi-a46043234</span></a>
+    <a class="link" href="https://contra.com/fajuyi_daniel_8p6cg23f"><b>Contra</b><span>contra.com/fajuyi_daniel_8p6cg23f</span></a>
+    <div style="margin-top:auto;display:flex;justify-content:space-between;color:#aeb4c8;font-size:10pt">
+      <span>WhatsApp / Phone: +234 906 924 6163</span><span>Lagos, Nigeria · WAT (UTC+1)</span>
+    </div>
+  </div>
+</section>
+</body></html>

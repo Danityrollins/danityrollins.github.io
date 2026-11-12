@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://danityrollins.github.io/sitemap.xml

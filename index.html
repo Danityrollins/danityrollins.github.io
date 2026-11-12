@@ -86,8 +86,16 @@ li::marker{color:var(--acc)}
  .nav .links a:not(:last-child){display:none}
  .link{flex-direction:column;align-items:flex-start;gap:4px}
 }
+</style><style>
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery figure{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.gallery img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;display:block;border-bottom:1px solid var(--line)}
+.gallery figcaption{padding:10px 12px}
+.gallery figcaption b{display:block;font-size:14px}
+.gallery figcaption span{font-size:12px;color:var(--mut)}
+@media (max-width:760px){.gallery{grid-template-columns:1fr}}
 </style></head><body>
-<div class="nav"><div class="w"><b style="font-family:Poppins">Fajuyi Daniel</b><span class="links"><a href="#services">Services</a><a href="#work">Work</a><a href="#contact">Contact</a></span></div></div>
+<div class="nav"><div class="w"><b style="font-family:Poppins">Fajuyi Daniel</b><span class="links"><a href="#services">Services</a><a href="#work">Work</a><a href="#screens">Screenshots</a><a href="#contact">Contact</a></span></div></div>
 
 <!-- COVER -->
 <section class="page cover">
@@ -204,6 +212,22 @@ li::marker{color:var(--acc)}
     <div class="card"><h3>Lead list automation (n8n)</h3><p>Weekly pull of newly registered Florida businesses into a deduplicated Google Sheet, emailed to the client every Monday morning.</p><div style="margin-top:3mm"><span class="tag">n8n</span><span class="tag">Google Sheets</span><span class="tag">Gmail</span></div></div>
   </div>
   <div class="foot"><span>Screenshots of each build available on request</span><span>05</span></div>
+</section>
+
+<!-- GALLERY -->
+<section class="page" id="screens">
+  <div class="eyebrow">Inside the builds</div>
+  <h2 class="h">Real workflows, redacted</h2>
+  <p class="sub">Screenshots from live client builds with names, emails and keys removed. Click any image to open it full size.</p>
+  <div class="gallery"><figure><a href="img/make_ai-lead-intake-agents.jpg" target="_blank"><img src="img/make_ai-lead-intake-agents.jpg" alt="AI lead intake agents" loading="lazy"></a><figcaption><b>AI lead intake agents</b><span>Make.com · OpenAI · Apollo · ZeroBounce</span></figcaption></figure>
+<figure><a href="img/make_auto-verify-and-route-leads.jpg" target="_blank"><img src="img/make_auto-verify-and-route-leads.jpg" alt="Auto-verify & route leads" loading="lazy"></a><figcaption><b>Auto-verify & route leads</b><span>Webhook → GPT parsing → validation → router</span></figcaption></figure>
+<figure><a href="img/make_runs-daily-zero-errors.jpg" target="_blank"><img src="img/make_runs-daily-zero-errors.jpg" alt="Runs daily, zero errors" loading="lazy"></a><figcaption><b>Runs daily, zero errors</b><span>Live production run history</span></figcaption></figure>
+<figure><a href="img/make_daily-follow-up-sweep.jpg" target="_blank"><img src="img/make_daily-follow-up-sweep.jpg" alt="Daily follow-up sweep" loading="lazy"></a><figcaption><b>Daily follow-up sweep</b><span>Scheduled follow-ups every morning</span></figcaption></figure>
+<figure><a href="img/make_reply-listener.jpg" target="_blank"><img src="img/make_reply-listener.jpg" alt="Reply listener" loading="lazy"></a><figcaption><b>Reply listener</b><span>Inbox replies update the lead sheet</span></figcaption></figure>
+<figure><a href="img/n8n_patent-outreach-agent.jpg" target="_blank"><img src="img/n8n_patent-outreach-agent.jpg" alt="n8n patent outreach agent" loading="lazy"></a><figcaption><b>n8n patent outreach agent</b><span>USPTO API → dedupe → Apollo → AI email</span></figcaption></figure>
+<figure><a href="img/n8n_lead-delivery-webhook.jpg" target="_blank"><img src="img/n8n_lead-delivery-webhook.jpg" alt="n8n lead delivery webhook" loading="lazy"></a><figcaption><b>n8n lead delivery webhook</b><span>API audience build → filter → Gmail</span></figcaption></figure>
+<figure><a href="img/zapier_crm-to-trello.jpg" target="_blank"><img src="img/zapier_crm-to-trello.jpg" alt="Roofing CRM to Trello" loading="lazy"></a><figcaption><b>Roofing CRM to Trello</b><span>Zapier: Roofr lead → Trello card → Gmail</span></figcaption></figure>
+<figure><a href="img/trello_butler-automation.jpg" target="_blank"><img src="img/trello_butler-automation.jpg" alt="Trello Butler automation" loading="lazy"></a><figcaption><b>Trello Butler automation</b><span>Rules that label, sort and move cards</span></figcaption></figure></div>
 </section>
 
 <!-- CONTACT -->
